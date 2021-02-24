@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Ciudad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for dato in datos %}
+        <tr>
+            <td>{{ dato[] }}</td>
+            
+        </tr>
+
+     {% endfor %}
+ 
+    </tbody>
+</table>
+{% endblock %}
