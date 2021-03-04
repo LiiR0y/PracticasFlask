@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+    <div class="singup">
+        <p class="title"><h1>Registro</h1></p>
+        <p class="welcome-message"><h2>Bienvenido</h2>
+        </p>
+
+        <form class="singup-form" method="POST" >
+            <div class="form-control">
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="form-control">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="form-control">
+                <input type="text" placeholder="Genero">
+            </div>
+            <div class="form-control">
+                <input type="text" placeholder="Pais">
+            </div>
+             <div class="form-control">
+                <input type="text" placeholder="Ciudad">
+            </div> 
+            <div class="form-control">
+                <input type="text" placeholder="Usuario">
+           </div> 
+            <div class="form-control">
+                <input type="password" placeholder="Password">
+            </div>
+             
+
+
+            <button class="submit">Registrar</button>
+        </form>
+
+    </div>
+    <form action="" method="POST">
+        <label for="id">Nombre</label><input type="text" name="nombre">
+         <br>
+        <label>Email</label> <input type="text" name="email">
+         <br>
+         <label for="Genero">Genero</label><input type="text" name="genero">
+         <br>
+         <label for="Pais">Pais</label><input type="text" name = "pais">
+         <br>
+         <label for="Ciudad">Ciudad</label><input type="text" name = "ciudad">
+         <br>
+         <label for="Usuario">Usuario</label><input type="text" name = "usuario">
+         <br>
+         <label for="Password">Contrasena</label><input type="text" name = "contrasena">
+         <input type="submit" value="Add">
+     </form>
+{% endblock %}

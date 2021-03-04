@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Bienvenido a la Website</h1>
+<div>
+    {% for user in users %}
+    <div>
+        
+        <div>
+            <h3>{{ user[1] }}</h3>
+            <p >{{ users[5] }}</p>
+            <strong id="">$ {{ user[2] }}</strong>
+        </div>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
